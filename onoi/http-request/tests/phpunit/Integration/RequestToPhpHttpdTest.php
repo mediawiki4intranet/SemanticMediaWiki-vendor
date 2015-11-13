@@ -116,7 +116,7 @@ class RequestToPhpHttpdTest extends \PHPUnit_Framework_TestCase {
 		$multiCurlRequest->execute();
 	}
 
-	public function testAsyncResponse() {
+	public function testSocketResponse() {
 
 		$this->connectToHttpd();
 		$expectedToCount = 1;
@@ -139,7 +139,7 @@ class RequestToPhpHttpdTest extends \PHPUnit_Framework_TestCase {
 
 		$socketRequest->ping();
 
-		$socketRequest->setOption( ONOI_HTTP_REQUEST_ON_COMPLETED_CALLBACK, function( $requestResponse ) use ( $asyncCallbackResponseMock ) {
+		$socketRequest->setOption( ONOI_HTTP_REQUEST_ON_FAILED_CALLBACK, function( $requestResponse ) use ( $asyncCallbackResponseMock ) {
 			$asyncCallbackResponseMock->run( $requestResponse );
 		} );
 

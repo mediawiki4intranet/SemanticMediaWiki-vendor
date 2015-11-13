@@ -407,66 +407,6 @@
         ]
     },
     {
-        "name": "mediawiki/validator",
-        "version": "2.0.4",
-        "version_normalized": "2.0.4.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/JeroenDeDauw/Validator.git",
-            "reference": "57c6f20f8c0100865e4318b9e5277dd2c4331a0a"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/JeroenDeDauw/Validator/zipball/57c6f20f8c0100865e4318b9e5277dd2c4331a0a",
-            "reference": "57c6f20f8c0100865e4318b9e5277dd2c4331a0a",
-            "shasum": ""
-        },
-        "require": {
-            "param-processor/param-processor": "~1.1",
-            "php": ">=5.3.0"
-        },
-        "time": "2014-06-25 21:40:08",
-        "type": "mediawiki-extension",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "Validator.php"
-            ],
-            "psr-4": {
-                "ParamProcessor\\": "src/ParamProcessor/"
-            },
-            "classmap": [
-                "src/legacy/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Jeroen De Dauw",
-                "email": "jeroendedauw@gmail.com",
-                "homepage": "http://jeroendedauw.com",
-                "role": "Developer"
-            }
-        ],
-        "description": "MediaWiki wrapper for the ParamProcessor library",
-        "homepage": "https://github.com/JeroenDeDauw/Validator",
-        "keywords": [
-            "ParamProcessor",
-            "SMW",
-            "Semantic MediaWiki",
-            "mediawiki",
-            "validator"
-        ]
-    },
-    {
         "name": "mediawiki/parser-hooks",
         "version": "1.4",
         "version_normalized": "1.4.0.0",
@@ -819,58 +759,6 @@
         ]
     },
     {
-        "name": "onoi/http-request",
-        "version": "1.1.1",
-        "version_normalized": "1.1.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/onoi/http-request.git",
-            "reference": "3ec6b35f3d2c1b2bc7dd6a74a4fa0037f0d78042"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/onoi/http-request/zipball/3ec6b35f3d2c1b2bc7dd6a74a4fa0037f0d78042",
-            "reference": "3ec6b35f3d2c1b2bc7dd6a74a4fa0037f0d78042",
-            "shasum": ""
-        },
-        "require": {
-            "onoi/cache": "~1.2",
-            "php": ">=5.3.2"
-        },
-        "suggest": {
-            "lib-curl": "Allows making CURL requests"
-        },
-        "time": "2015-10-28 16:59:07",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Onoi\\HttpRequest\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "mwjames",
-                "homepage": "https://github.com/mwjames"
-            }
-        ],
-        "description": "A minimalistic http/curl request interface library",
-        "homepage": "https://github.com/onoi/http-request",
-        "keywords": [
-            "curl",
-            "http request"
-        ]
-    },
-    {
         "name": "squizlabs/php_codesniffer",
         "version": "2.3.4",
         "version_normalized": "2.3.4.0",
@@ -1211,6 +1099,118 @@
             "pdepend",
             "phpmd",
             "pmd"
+        ]
+    },
+    {
+        "name": "onoi/http-request",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/onoi/http-request.git",
+            "reference": "21f534cb7d06efc7743b6412372138f8c7243dea"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/onoi/http-request/zipball/21f534cb7d06efc7743b6412372138f8c7243dea",
+            "reference": "21f534cb7d06efc7743b6412372138f8c7243dea",
+            "shasum": ""
+        },
+        "require": {
+            "onoi/cache": "~1.2",
+            "php": ">=5.3.2"
+        },
+        "suggest": {
+            "lib-curl": "Allows making CURL requests"
+        },
+        "time": "2015-11-09 04:58:31",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Onoi\\HttpRequest\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "mwjames",
+                "homepage": "https://github.com/mwjames"
+            }
+        ],
+        "description": "A minimalistic http/curl request interface library",
+        "homepage": "https://github.com/onoi/http-request",
+        "keywords": [
+            "curl",
+            "http request"
+        ]
+    },
+    {
+        "name": "mediawiki/validator",
+        "version": "2.0.4",
+        "version_normalized": "2.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/JeroenDeDauw/Validator.git",
+            "reference": "57c6f20f8c0100865e4318b9e5277dd2c4331a0a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/JeroenDeDauw/Validator/zipball/57c6f20f8c0100865e4318b9e5277dd2c4331a0a",
+            "reference": "57c6f20f8c0100865e4318b9e5277dd2c4331a0a",
+            "shasum": ""
+        },
+        "require": {
+            "param-processor/param-processor": "~1.1",
+            "php": ">=5.3.0"
+        },
+        "time": "2014-06-25 21:40:08",
+        "type": "mediawiki-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "Validator.php"
+            ],
+            "psr-4": {
+                "ParamProcessor\\": "src/ParamProcessor/"
+            },
+            "classmap": [
+                "src/legacy/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Jeroen De Dauw",
+                "email": "jeroendedauw@gmail.com",
+                "homepage": "http://jeroendedauw.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "MediaWiki wrapper for the ParamProcessor library",
+        "homepage": "https://github.com/JeroenDeDauw/Validator",
+        "keywords": [
+            "ParamProcessor",
+            "SMW",
+            "Semantic MediaWiki",
+            "mediawiki",
+            "validator"
         ]
     }
 ]

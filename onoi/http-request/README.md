@@ -30,7 +30,7 @@ dependency to your [composer.json][composer].
 ```json
 {
 	"require": {
-		"onoi/http-request": "~1.1"
+		"onoi/http-request": "~1.2"
 	}
 }
 ```
@@ -111,6 +111,10 @@ developers mailing list and have a look at the [contribution guidelinee](/CONTRI
 The library provides unit tests that covers the core-functionality normally run by the [continues integration platform][travis]. Tests can also be executed manually using the PHPUnit configuration file found in the root directory.
 
 ## Release notes
+
+* 1.2.0 (2015-11-09)
+ - Added "wasAccepted" to the `SocketRequest` response output
+ - Added option `ONOI_HTTP_REQUEST_FOLLOWLOCATION` to support resetting the URL location in case of a `301` HTTP response during a `SocketRequest::ping` request
 
 * 1.1.0 (2015-09-12)
  - Renamed `AsyncCurlRequest` to `MultiCurlRequest`
